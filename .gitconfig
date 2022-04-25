@@ -1,0 +1,19 @@
+[user]
+	name = JamesRivers
+	email = rivers1980@gmail.com
+[alias]
+	br = branch
+	a = add
+	aa = add .
+	co = checkout
+	ci = commit
+	cim = commit -m
+	s = status
+	p = push
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	lg2 = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr - %C(magenta)%cD%Creset) %C(bold blue)<%an>%Creset' --abbrev-commit
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
