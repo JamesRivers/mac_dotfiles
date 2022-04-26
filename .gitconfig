@@ -10,6 +10,7 @@
 	cim = commit -m
 	s = status
 	p = push
+        m = merge
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	lg2 = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr - %C(magenta)%cD%Creset) %C(bold blue)<%an>%Creset' --abbrev-commit
 [filter "lfs"]
