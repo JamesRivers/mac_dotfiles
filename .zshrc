@@ -38,16 +38,17 @@ alias pull='git pull'
 alias acp='git add . && commit "Updated $(date)" && git push'
 
 ## GIT Branches in terminal
-# Load version control information
-autoload -Uz vcs_info
-precmd() { vcs_info }
+function parse_git_branch() {
+    git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
+}
 
-# Format the vcs_info_msg_0_ variable
-zstyle ':vcs_info:git:*' formats 'on branch %b'
- 
-# Set up the prompt (with git branch name)
+COLOR_DEF=$'\e[0m'
+COLOR_USR=$'\e[38;5;243m'
+COLOR_DIR=$'\e[38;5;197m'
+COLOR_GIT=$'\e[38;5;39m'
 setopt PROMPT_SUBST
-PROMPT='%n in ${PWD/#$HOME/~} ${vcs_info_msg_0_} > '
+export PROMPT='${COLOR_USR}%n ${COLOR_DIR}%~ ${COLOR_GIT}$(parse_git_branch)${COLOR_DEF} $ '
+
 
 # MEDIA Links
 ## Home Cams
