@@ -38,16 +38,29 @@ alias pull='git pull'
 alias acp='git add . && commit "Updated $(date)" && git push'
 
 ## GIT Branches in terminal
-function parse_git_branch() {
-    git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
+autoload -Uz compinit && compinit
+autoload -Uz add-zsh-hook
+autoload -Uz vcs_info
+
+add-zsh-hook precmd vcs_info
+
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:*' formats " %F{green}%c%u(%b)%f"
+zstyle ':vcs_info:*' actionformats " %F{green}%c%u(%b)%f %a"
+zstyle ':vcs_info:*' stagedstr "%F{red}"
+zstyle ':vcs_info:*' unstagedstr "%F{red}"
+zstyle ':vcs_info:*' check-for-changes true
+
+zstyle ':vcs_info:git*+set-message:*' hooks git-untracked
+
++vi-git-untracked() {
+  if git --no-optional-locks status --porcelain 2> /dev/null | grep -q "^??"; then
+    hook_com[staged]+="%F{red}"
+  fi
 }
 
-COLOR_DEF=$'\e[0m'
-COLOR_USR=$'\e[38;5;243m'
-COLOR_DIR=$'\e[38;5;197m'
-COLOR_GIT=$'\e[38;5;39m'
 setopt PROMPT_SUBST
-export PROMPT='${COLOR_USR}%n ${COLOR_DIR}%~ ${COLOR_GIT}$(parse_git_branch)${COLOR_DEF} $ '
+export PROMPT='%n:%1~$vcs_info_msg_0_ %# '
 
 
 # MEDIA Links
