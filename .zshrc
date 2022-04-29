@@ -36,6 +36,7 @@ alias commit='git commit -m'
 alias push='git push'
 alias pull='git pull'
 alias acp='git add . && commit "Updated $(date)" && git push'
+alias garch='git archive -o ~/Google\ Drive/My\ Drive/academy/"${PWD##*/}"/"${PWD##*/}"_$(date +"%Y-%m-%d").zip HEAD'
 
 ## GIT Branches in terminal
 autoload -Uz compinit && compinit
