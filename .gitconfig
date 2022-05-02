@@ -3,6 +3,7 @@
 	email = rivers1980@gmail.com
 [alias]
 	br = branch
+        url = remote get-url origin
 	a = add
 	aa = add .
 	co = checkout
