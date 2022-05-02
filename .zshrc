@@ -28,6 +28,7 @@ alias myip='curl ipinfo.io && curl ifconfig.me/all'
 ## Grep
 alias drcl='grep -rnwil . -e'
 alias drc='grep -rnwi . -e'
+alias cht='curl cheat.sh/'
 
 # GIT
 alias g='git'
