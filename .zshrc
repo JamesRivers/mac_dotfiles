@@ -103,6 +103,8 @@ alias mpv='/Applications/mpv.app/Contents/MacOS/mpv*'
 
 # HOMEBREW
 export PATH="/opt/homebrew/bin:$PATH"
+# TMUX Cheat Sheet
+export PATH="~/GitFiles/:$PATH"
 
 ## Lynx 
 alias '?'='/opt/homebrew/bin/lynxdot/duck-lynx.sh'
