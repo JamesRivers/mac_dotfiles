@@ -39,6 +39,8 @@ alias pull='git pull'
 alias acp='git add . && commit "Updated $(date)" && git push'
 alias garch='git archive -o ~/Google\ Drive/My\ Drive/academy/"${PWD##*/}"/"${PWD##*/}"_$(date +"%Y-%m-%d").zip HEAD'
 alias mp='git checkout main && git merge develop && git push'
+alias dev='git checkout develop'
+alias main='git checkout main'
 
 ## GIT Branches in terminal
 autoload -Uz compinit && compinit
