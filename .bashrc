@@ -128,6 +128,9 @@ alias awsvpnlist='openvpn3 sessions-list'
 alias rdpawsjump='xfreerdp +clipboard /smart-sizing /v:172.31.78.237 /u:Administrator /p:"&o*O@;JFnE*6A3G=e4f(HjPMs=&NUJU;"'
 ### ALIAS ADDITIONAL
 alias g='git'
+alias main='git checkout main'
+alias dev='git checkout develop'
+alias mp='git checkout main && git merge develop && git push'
 ## MUSIC
 alias playbbcr1="mpv 'http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/uk/sbr_high/ak/bbc_radio_one.m3u8'"
 alias playbbcr2="mpv 'http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/uk/sbr_med/ak/bbc_radio_two.m3u8'"
