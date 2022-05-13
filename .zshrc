@@ -41,6 +41,9 @@ alias garch='git archive -o ~/Google\ Drive/My\ Drive/academy/"${PWD##*/}"/"${PW
 alias mp='git checkout main && git merge develop && git push'
 alias dev='git checkout develop'
 alias main='git checkout main'
+alias issue="gh issue list --state "all""
+alias issuestatus="gh issue status"
+alias issuecreate="gh issue create"
 
 ## GIT Branches in terminal
 autoload -Uz compinit && compinit
