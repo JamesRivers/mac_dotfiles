@@ -29,6 +29,7 @@ alias myip='curl ipinfo.io && curl ifconfig.me/all'
 alias drcl='grep -rnwil . -e'
 alias drc='grep -rnwi . -e'
 alias cht='curl cheat.sh/'
+alias na='zsh ~/GitFiles/mac_dotfiles/newarticle/new_article.sh'
 
 # GIT
 alias g='git'
