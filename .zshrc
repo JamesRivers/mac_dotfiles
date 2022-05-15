@@ -68,6 +68,12 @@ zstyle ':vcs_info:git*+set-message:*' hooks git-untracked
   fi
 }
 
+## fzf and ripgrep
+if type rg &> /dev/null; then
+     export FZF_DEFAULT_COMMAND='rg --files'
+       export FZF_DEFAULT_OPTS='-m --height 50% --border'
+fi
+
 setopt PROMPT_SUBST
 export PROMPT='%n:%1~$vcs_info_msg_0_ %# '
 
