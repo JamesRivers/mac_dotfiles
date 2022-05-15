@@ -12,7 +12,7 @@ alias l='ls -CF'
 
 # NAS MOUNTS
 # Home 172 mount points
-alias nasbtns='sudo mount -o resvport,rw -t nfs 172.16.1.105:/volume1/btns ~/Private/btns'
+alias nasbtns='sudo mount -o resvport,rw -t nfs 172.16.1.105:/volume1/btns ~/private/btns'
 alias nasvideo='sudo mount -o resvport,rw -t nfs 172.16.1.105:/volume1/video ~/Private/video'
 # Imagine Communications Technical Papers 
 alias techpubs='cd /Users/jamesrivers/My Drive/ImagineRef'
