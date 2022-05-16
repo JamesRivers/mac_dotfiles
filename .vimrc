@@ -28,13 +28,17 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 call plug#end()
 
-"remap nerdtree to F2
+"remap nerdtree to F3
 silent! nmap <C-p> :NERDTreeToggle<CR>
 silent! map <F3> :NERDTreeFind<CR>
 let g:NERDTreeMapActivateNode="<F3>"
 let g:NERDTreeMapPreview="<F4>"
-let NERDTreeWinSize = 1
-
+"nerdtree window size
+let NERDTreeWinSize = 50
+"nerdtree tab nav
+map  <C-l> :tabn<CR>
+map  <C-h> :tabp<CR>
+map  <C-n> :tabnew<CR>
 "remap fzf to c f 
 nnoremap <silent> <C-f> :Files<CR>
 nnoremap <silent> <C-g> :File ../../<CR>
