@@ -131,7 +131,11 @@ alias g='git'
 alias main='git checkout main'
 alias dev='git checkout develop'
 alias mp='git checkout main && git merge develop && git push'
-alias zet="date '+%Y%m%d%H%M%S'_"
+alias zet="echo "$(date +%Y%m%d%H%M)""
+alias issuecreate="gh issue create"
+alias issue="gh issue list --state "all""
+alias issuestatus="gh issue status"
+alias na='bash ~/GitFiles/mac_dotfiles/newarticle/new_article.sh'  
 ## MUSIC
 alias playbbcr1="mpv 'http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/uk/sbr_high/ak/bbc_radio_one.m3u8'"
 alias playbbcr2="mpv 'http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/uk/sbr_med/ak/bbc_radio_two.m3u8'"
