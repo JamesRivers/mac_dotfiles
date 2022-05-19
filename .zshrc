@@ -95,6 +95,7 @@ alias playlbc="mpv 'http://icecast.thisisdax.com/LBCLondon'"
 alias playzm="mpv 'https://ais-nzme.streamguys1.com/nz_008/playlist.m3u8'"
 alias playlofiaudio="mpv 'https://www.youtube.com/watch?v=tCs48OFv7xA' --no-video"
 alias playlofiaudio1="mpv 'https://www.youtube.com/watch?v=cbuZfY2S2UQ' --no-video"
+alias playhack="mpv 'https://www.youtube.com/watch?v=_daTfgc4u3k' --no-video"
 
 ## VIDEO STREAMS
 alias playbbcnews="mpv --ontop 'https://vs-hls-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8'"
