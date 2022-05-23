@@ -30,7 +30,7 @@ alias drcl='grep -rnwil . -e'
 alias drc='grep -rnwi . -e'
 alias cht='curl cheat.sh/'
 alias na='zsh ~/GitFiles/mac_dotfiles/newarticle/new_article.sh'
-
+alias weeks='ncal -w3'
 # GIT
 alias g='git'
 alias add='git add .'
