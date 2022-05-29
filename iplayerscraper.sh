@@ -2,6 +2,12 @@
 # Grab the page source from bbc iplayer save to a file called episodes
 #�| change text value as required below
 mount -t nfs 192.168.90.126:/volume2/ytdl /mnt/nas/
+
+
+#echo "Enter the series name"
+#read -p 'series-name:  ' series-name
+#mkdir $seriesname
+
 echo "Enter the url"
 read -p 'url:  ' url
 
@@ -16,13 +22,12 @@ rm -r pagesource
 urlsnip=https://www.bbc.co.uk/iplayer/episode/
 sed -i "s+^+$urlsnip+g" episodes
 
-mv episodes  $code-series
 
 echo "Enter the series number"
 read -p 'number:  ' number
 
+mv episodes  $code-series-$number
 mkdir series-$number
-cd series-$number
-mv ../$code-series .
+mv $code-series-$number series-$number/
 
-youtube-dl -a $code-series
+youtube-dl -o 'series-$number/%(title)s-%(id)s.%(ext)s' -a series-$number/$code-series-$number
