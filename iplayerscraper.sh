@@ -16,7 +16,7 @@ wget -O pagesource -U "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/201001
 echo "Enter the series code"
 read -p 'code:  ' code
 
-cat pagesource | grep -E -o "$code.{0,3}" pagesource | sort -u > episodes
+cat pagesource | grep -E -o "$code.{0,6}" pagesource | sort -u > episodes
 
 rm -r pagesource
 urlsnip=https://www.bbc.co.uk/iplayer/episode/
@@ -30,4 +30,5 @@ mv episodes  $code-series-$number
 mkdir series-$number
 mv $code-series-$number series-$number/
 
-youtube-dl -o 'series-$number/%(title)s-%(id)s.%(ext)s' -a series-$number/$code-series-$number
+youtube-dl -iw -o series-$number/'%(title)s-%(id)s.%(ext)s' -a series-$number/$code-series-$number
+
