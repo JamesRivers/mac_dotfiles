@@ -46,7 +46,7 @@ alias nah='zsh ~/GitFiles/mac_dotfiles/newarticle/new_how_article.sh'
 alias nat='zsh ~/GitFiles/mac_dotfiles/newarticle/new_tut_article.sh'
 alias nz='zsh ~/GitFiles/mac_dotfiles/newzet/new_zet.sh'
 alias weeks='ncal -w3'
-alias clocks='~/GitFiles/mac_dotfiles/cli_clocks/timedateworldedit.sh'
+alias clocks='~/GitFiles/cli_clocks/timedateworldedit.sh'
 # GIT
 alias g='git'
 alias add='git add .'
