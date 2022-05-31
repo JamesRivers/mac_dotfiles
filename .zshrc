@@ -24,11 +24,20 @@ alias pg='pdfgrep -iHnr'
 ## MYIP 
 alias myip='curl ipinfo.io && curl ifconfig.me/all'
 ## Find new files recently added
-#alias findnew='find -cmin +1  -cmin -2800'
+alias findnew='find -cmin +1  -cmin -2800'
+#new ls using exa - brew install exa
+alias l='exa'
+alias ll='exa -al'
+alias tree='exa -T'
+alias tree-R='exa -TR'
 ## Grep
 alias drcl='grep -rnwil . -e'
 alias drc='grep -rnwi . -e'
+#cheatsheet
 alias cht='curl cheat.sh/'
+# cat replace with bat - brew install bat
+alias cat='bat'
+# new article creation 
 alias nar='zsh ~/GitFiles/mac_dotfiles/newarticle/new_ref_article.sh'
 alias nae='zsh ~/GitFiles/mac_dotfiles/newarticle/new_exp_article.sh'
 alias nah='zsh ~/GitFiles/mac_dotfiles/newarticle/new_how_article.sh'
