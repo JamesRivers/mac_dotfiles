@@ -31,7 +31,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 call plug#end()
 
 "remap nerdtree to F3
-silent! nmap <C-p> :NERDTreeToggle<CR>
+silent! nmap <C-t> :NERDTreeToggle<CR>
 silent! map <F3> :NERDTreeFind<CR>
 let g:NERDTreeMapActivateNode="<F3>"
 let g:NERDTreeMapPreview="<F4>"
@@ -49,3 +49,17 @@ nnoremap <silent> <Leader>f :Rg<CR>
 
 "vim grep to ripgrep
 set grepprg=rg\ --vimgrep\ --smart-case\ --follow
+
+"fzf path 
+function! HandleFZF(file)
+    "let filename = fnameescape(fnamemodify(a:file, ":t"))
+    "why only the tail ?  I believe the whole filename must be linked unless everything is flat ...
+    let filename = fnameescape(a:file)
+    let filename_wo_timestamp = fnameescape(fnamemodify(a:file, ":t:s/^[0-9]*-//"))
+     " Insert the markdown link to the file in the current buffer
+    let mdlink = "![".filename_wo_timestamp."](".filename.")"
+    put=mdlink
+endfunction
+
+command! -nargs=1 HandleFZF :call HandleFZF(<f-args>)
+nnoremap <C-g> : call fzf#run({'sink': 'HandleFZF'})<CR>

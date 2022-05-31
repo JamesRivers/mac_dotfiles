@@ -30,8 +30,12 @@ alias l='exa'
 alias ll='exa -al'
 alias tree='exa -T'
 alias tree-R='exa -TR'
-alias fzfview='filepath=$(fzf); cat $filepath'
-alias fzfopen='filepath=$(fzf); vim $filepath'
+#fzf 
+alias fview='filepath=$(fzf); cat $filepath'
+alias fvim='filepath=$(fzf); vim $filepath'
+alias f='fzf'
+#white space killer 
+alias wsk="zsh ~/GitFiles/mac_dotfiles/wsk.sh"
 ## Grep
 alias drcl='grep -rnwil . -e'
 alias drc='grep -rnwi . -e'
