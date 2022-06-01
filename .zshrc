@@ -33,13 +33,15 @@ alias tree='exa -T'
 alias tree-R='exa -TR'
 #fzf 
 alias fview='filepath=$(fzf); cat $filepath'
-alias fvim='filepath=$(fzf); vim $filepath'
+alias fedit='filepath=$(fzf); vim $filepath'
 alias f='fzf'
 #white space killer 
 alias wsk="zsh ~/GitFiles/mac_dotfiles/wsk.sh"
 ## Grep
 alias drcl='grep -rnwil . -e'
 alias drc='grep -rnwi . -e'
+alias rglist='rg -il regex'
+alias rgsnip='rg -i'
 #cheatsheet
 alias cht='curl cheat.sh/'
 # cat replace with bat - brew install bat
