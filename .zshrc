@@ -18,7 +18,8 @@ alias nasvideo='sudo mount -o resvport,rw -t nfs 172.16.1.105:/volume1/video ~/P
 alias techpubs='cd "/Users/jamesrivers/Public/btns/B.AdobePDF/A.ImagineCommsREF/techpubs/Playout/Integrated Playout/Versio Platform v4"'
 
 # USEFUL
-
+#tmux start
+alias t='zsh ~/GitFiles/mac_dotfiles/tmuxstart.sh'
 ## PDF Find love this tool - run pg follwed by key words or sequence and standback. 
 alias pg='pdfgrep -iHnr'
 ## MYIP 
