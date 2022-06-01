@@ -40,7 +40,7 @@ alias wsk="zsh ~/GitFiles/mac_dotfiles/wsk.sh"
 ## Grep
 alias drcl='grep -rnwil . -e'
 alias drc='grep -rnwi . -e'
-alias rglist='rg -il regex'
+alias rglist='rg -i --max-count 1'
 alias rgsnip='rg -i'
 #cheatsheet
 alias cht='curl cheat.sh/'
