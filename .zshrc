@@ -126,7 +126,7 @@ alias playhack="mpv 'https://www.youtube.com/watch?v=_daTfgc4u3k' --no-video"
 ## VIDEO STREAMS
 alias playbbcnews="mpv --ontop 'https://vs-hls-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8'"
 alias playimagine="mpv 'http://35.212.236.5/index.m3u8'"
-alias playbloom="mpv 'https://liveproduseast.global.ssl.fastly.net/btv/desktop/us_live.m3u8'"
+alias playbloom="mpv 'https://www.youtube.com/watch?v=dp8PhLsUcFE' --ontop"
 alias playiptv="mpv 'https://iptv-org.github.io/iptv/index.m3u'"
 alias playnbcnews="mpv 'https://youtu.be/htFR37hKaSU'"
 alias playskynews="mpv 'https://youtu.be/9Auq9mYxFEE'"
@@ -136,6 +136,7 @@ alias playbbc3="mpv 'https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pi
 alias playbbc4="mpv 'http://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_four_hd/mobile_wifi_main_sd_abr_v2_akamai_hls_live_http.m3u8'"
 alias playbbc1="mpv 'https://vs-hls-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_one_hd/t=3840/v=pv14/b=5070016/main.m3u8'"
 alias playbbc2="mpv 'http://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_four_hd/mobile_wifi_main_sd_abr_v2_akamai_hls_live_http.m3u8'"
+alias playabc="mpv 'https://www.youtube.com/watch?v=w_Ma8oQLmSM' --ontop"
 
 
 ## ZSH SPECIFIC
