@@ -133,6 +133,7 @@ alias playbbc3="mpv 'https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pi
 alias playbbc4="mpv 'http://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_four_hd/mobile_wifi_main_sd_abr_v2_akamai_hls_live_http.m3u8'"
 alias playbbc1="mpv 'https://vs-hls-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_one_hd/t=3840/v=pv14/b=5070016/main.m3u8'"
 alias playbbc2="mpv 'http://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_four_hd/mobile_wifi_main_sd_abr_v2_akamai_hls_live_http.m3u8'"
+alias playabc="mpv 'https://www.youtube.com/watch?v=w_Ma8oQLmSM' --ontop"
 
 
 ## ZSH SPECIFIC
