@@ -123,7 +123,7 @@ alias playhack="mpv 'https://www.youtube.com/watch?v=_daTfgc4u3k' --no-video"
 ## VIDEO STREAMS
 alias playbbcnews="mpv --ontop 'https://vs-hls-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8'"
 alias playimagine="mpv 'http://35.212.236.5/index.m3u8'"
-alias playbloom="mpv 'https://liveproduseast.global.ssl.fastly.net/btv/desktop/us_live.m3u8'"
+alias playbloom="mpv 'https://www.youtube.com/watch?v=dp8PhLsUcFE' --ontop"
 alias playiptv="mpv 'https://iptv-org.github.io/iptv/index.m3u'"
 alias playnbcnews="mpv 'https://youtu.be/htFR37hKaSU'"
 alias playskynews="mpv 'https://youtu.be/9Auq9mYxFEE'"
