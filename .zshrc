@@ -101,6 +101,9 @@ fi
 setopt PROMPT_SUBST
 export PROMPT='%n:%1~$vcs_info_msg_0_ %# '
 
+##lesspipe 
+export LESSOPEN="|/opt/homebrew/bin/lesspipe.sh %s"
+
 
 # MEDIA Links
 ## Home Cams
