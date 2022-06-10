@@ -65,6 +65,6 @@ command! -nargs=1 HandleFZF :call HandleFZF(<f-args>)
 nnoremap <C-g> : call fzf#run({'sink': 'HandleFZF'})<CR>
 "vim line highlight
 set cursorline        
-hi CursorLine   cterm=NONE ctermbg=yellow ctermfg=white
+hi CursorLine   cterm=NONE ctermbg=yellow ctermfg=black
 ":set cursorcolumn
 :nnoremap H :set cursorline! <CR>

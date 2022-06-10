@@ -33,6 +33,7 @@ alias tree='exa -T'
 alias tree-R='exa -TR'
 #fzf 
 alias fview='filepath=$(fzf); cat $filepath'
+alias fpdf='filepath=$(fzf); lesspipe.sh $filepath | cat'
 alias fedit='filepath=$(fzf); vim $filepath'
 alias f='fzf'
 #white space killer 
@@ -146,8 +147,8 @@ export PATH="/opt/homebrew/bin:$PATH"
 export PATH="~/GitFiles/:$PATH"
 
 ## Lynx 
-alias '?'='/opt/homebrew/bin/lynxdot/duck-lynx.sh'
-alias '??'='/opt/homebrew/bin/lynxdot/google-lynx.sh'
+alias '?'='~/GitFiles/mac_dotfiles/lynx/duck.sh'
+alias '??'='~/GitFiles/mac_dotfiles/lynx/google.sh'
 
 # Highlight the current autocomplete option
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
