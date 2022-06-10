@@ -22,6 +22,8 @@ alias techpubs='cd "/Users/jamesrivers/Google Drive/My Drive/ImagineRef/techpubs
 alias t='zsh ~/GitFiles/mac_dotfiles/tmuxstart.sh'
 ## PDF Find love this tool - run pg follwed by key words or sequence and standback. 
 alias pg='pdfgrep -iHnr'
+# Another PF tool - view PDF in terminal
+alias pdfview='lesspipe.sh $1 | less'
 ## MYIP 
 alias myip='curl ipinfo.io && curl ifconfig.me/all'
 ## Find new files recently added
