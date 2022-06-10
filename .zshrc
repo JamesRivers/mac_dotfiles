@@ -15,7 +15,7 @@ alias l='ls -CF'
 alias nasbtns='sudo mount -o resvport,rw -t nfs 172.16.1.105:/volume1/btns ~/Public/btns'
 alias nasvideo='sudo mount -o resvport,rw -t nfs 172.16.1.105:/volume1/video ~/Private/video'
 # Imagine Communications Technical Papers 
-alias techpubs='cd "/Users/jamesrivers/Public/btns/B.AdobePDF/A.ImagineCommsREF/techpubs/Playout/Integrated Playout/Versio Platform v4"'
+alias techpubs='cd "/Users/jamesrivers/Google Drive/My Drive/ImagineRef/techpubs"'
 
 # USEFUL
 #tmux start
