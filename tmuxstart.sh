@@ -14,7 +14,7 @@ window=2
 tmux new-window -t $session:$window -n 'THAMES'
 tmux send-keys -t $session:$window 'onvpn' C-m
 
-Vwindow=3
+window=3
 tmux new-window -t $session:$window -n 'CONTENT_DEV'
 tmux send-keys -t $session:$window 'cd ~/GitFiles/academy' C-m
 
