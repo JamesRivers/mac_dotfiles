@@ -10,6 +10,10 @@ alias lldir='ls -altrFR ; pwd'
 alias la='ls -A'
 alias l='ls -CF'
 
+##VPNs
+alias onvpn='/opt/cisco/anyconnect/bin/vpn -s connect vpn1.imaginecommunications.com/contractor_exception'
+alias offvpn='/opt/cisco/anyconnect/bin/vpn disconnect'
+
 # NAS MOUNTS
 # Home 172 mount points
 alias nasbtns='sudo mount -o resvport,rw -t nfs 172.16.1.105:/volume1/btns ~/Public/btns'
