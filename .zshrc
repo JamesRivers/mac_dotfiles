@@ -17,7 +17,7 @@ alias offvpn='/opt/cisco/anyconnect/bin/vpn disconnect'
 # NAS MOUNTS
 # Home 172 mount points
 alias nasbtns='sudo mount -o resvport,rw -t nfs 172.16.1.105:/volume1/btns ~/Public/btns'
-alias nasvideo='sudo mount -o resvport,rw -t nfs 172.16.1.105:/volume1/video ~/Private/video'
+alias nasvideo='sudo mount -o resvport,rw -t nfs 172.16.1.105:/volume1/video ~/Public/video'
 # Imagine Communications Technical Papers 
 alias techpubs='cd "/Users/jamesrivers/Google Drive/My Drive/ImagineRef/techpubs"'
 
@@ -30,6 +30,7 @@ alias pg='pdfgrep -iHnr'
 alias pdfview='lesspipe.sh $1 | less'
 ## MYIP 
 alias myip='curl ipinfo.io && curl ifconfig.me/all'
+alias ping='/opt/homebrew/bin/speedtest-cli'
 ## Find new files recently added
 alias findnew='find -cmin +1  -cmin -2800'
 #new ls using exa - brew install exa
