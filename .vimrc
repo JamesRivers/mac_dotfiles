@@ -74,6 +74,5 @@ hi CursorLine   cterm=NONE ctermbg=yellow ctermfg=black
 
 " In markdown files, Control + a surrounds highlighted text with square
 " " brackets, then dumps system clipboard contents into parenthesis
-autocmd FileType markdown vnoremap <c-a> " <Esc>`<i[<Esc>`>la](<Esc>"*]pa)<Esc>
-" autocmd FileType markdown nnoremap <c-t> " yiwi[<Esc>ea](https://twitter.com/<Esc>pa)<Esc>
+autocmd FileType markdown vnoremap <c-a> <Esc>`<i[<Esc>`>la](<Esc>"*]pa)<Esc>
 
