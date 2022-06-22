@@ -30,7 +30,7 @@ alias pg='pdfgrep -iHnr'
 alias pdfview='lesspipe.sh $1 | less'
 ## MYIP 
 alias myip='curl ipinfo.io && curl ifconfig.me/all'
-alias speed='/opt/homebrew/bin/speedtest-cli'
+alias speed='~/GitFiles/mac_dotfiles/speed.sh'
 ## Find new files recently added
 alias findnew='find -cmin +1  -cmin -2800'
 #new ls using exa - brew install exa
