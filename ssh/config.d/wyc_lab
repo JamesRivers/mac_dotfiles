@@ -1,0 +1,34 @@
+Host 3560_DEN
+	Hostname 172.16.0.4
+	User cisco
+	KexAlgorithms +diffie-hellman-group1-sha1
+	Ciphers aes128-cbc
+Host 3560_RACK
+	Hostname 172.16.0.2
+	User cisco
+	KexAlgorithms +diffie-hellman-group1-sha1
+	Ciphers aes128-cbc
+Host pve91
+	Hostname 192.168.1.91
+	User root
+	IdentityFile /Users/jamesrivers/.ssh/id_wyc_pve_rsa
+Host pve92
+	Hostname 192.168.1.92
+	User root
+	IdentityFile /Users/jamesrivers/.ssh/id_wyc_pve_rsa
+Host pve99
+	Hostname 192.168.1.99
+	User root
+	IdentityFile /Users/jamesrivers/.ssh/id_wyc_pve_rsa
+Host cat103
+	Hostname 172.16.1.118
+	User james
+	IdentityFile /Users/jamesrivers/.ssh/id_wyc_rsa
+Host ftp-pi
+	Hostname 192.168.1.58
+	User pi
+	IdentityFile /Users/jamesrivers/.ssh/id_wyc_rsa
+Host rclone-pi
+	Hostname 192.168.1.149
+	User james
+	IdentityFile /Users/jamesrivers/.ssh/id_wyc_rsa
