@@ -1,9 +1,0 @@
-Host aviatordeploy
-   Hostname 213.168.248.217
-   User root
-   IdentityFile /Users/jamesrivers/.ssh/id_linode_rsa
-
-Host aviatorwiki
-   Hostname 176.58.102.196
-   User root
-   IdentityFile /Users/jamesrivers/.ssh/id_linode_rsa

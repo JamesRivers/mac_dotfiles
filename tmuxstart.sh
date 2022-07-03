@@ -11,8 +11,8 @@ tmux new-window -t $session:$window -n 'LYNX'
 tmux send-keys -t $session:$window '? https://duckduckgo.com/' C-m 
 
 window=2
-tmux new-window -t $session:$window -n 'THAMES'
-tmux send-keys -t $session:$window 'onvpn' C-m
+tmux new-window -t $session:$window -n 'VPN'
+tmux send-keys -t $session:$window 'echo onvpn for imagine vpn or onwg for home' C-m
 
 window=3
 tmux new-window -t $session:$window -n 'CONTENT_DEV'

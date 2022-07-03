@@ -1,8 +1,0 @@
-Host pve24
-	Hostname 192.168.90.24
-	User root
-	IdentityFile /Users/jamesrivers/.ssh/id_thames_pve_rsa
-Host pve201
-	Hostname 192.168.90.201
-	User root
-	IdentityFile /Users/jamesrivers/.ssh/id_thames_pve_rsa

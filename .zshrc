@@ -13,6 +13,9 @@ alias l='ls -CF'
 ##VPNs
 alias onvpn='/opt/cisco/anyconnect/bin/vpn -s connect vpn1.imaginecommunications.com/contractor_exception'
 alias offvpn='/opt/cisco/anyconnect/bin/vpn disconnect'
+alias onwg='wg-quick up wg0'
+alias offwg='wg-quick down wg0'
+
 
 # NAS MOUNTS
 # Home 172 mount points
@@ -22,6 +25,8 @@ alias nasvideo='sudo mount -o resvport,rw -t nfs 172.16.1.105:/volume1/video ~/P
 alias techpubs='cd "/Users/jamesrivers/Google Drive/My Drive/ImagineRef/techpubs"'
 
 # USEFUL
+# fast-ssh menu
+alias fast='fast-ssh'
 #tmux start
 alias t='zsh ~/GitFiles/mac_dotfiles/tmuxstart.sh'
 ## PDF Find love this tool - run pg follwed by key words or sequence and standback. 
