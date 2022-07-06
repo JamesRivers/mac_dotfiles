@@ -1,8 +1,8 @@
 #!/bin/zsh
-RG_PREFIX="rg --files-with-matches"
+PG_PREFIX="pdfgrep -iHnr"
 INITIAL_QUERY=""
-FZF_DEFAULT_COMMAND="$RG_PREFIX '$INITIAL_QUERY'" 
-  CHOICE=$(fzf --bind "change:reload:$RG_PREFIX {q} || true" \
+FZF_DEFAULT_COMMAND="$PG_PREFIX '$INITIAL_QUERY'" 
+  CHOICE=$(fzf --bind "change:reload:$PG_PREFIX {q} || true" \
       --sort \
       --multi \
       --preview '[[ ! -z {} ]] && rg --pretty --context 5 {q} {}' \
