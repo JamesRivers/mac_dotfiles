@@ -46,7 +46,8 @@ alias tree-R='exa -TR'
 #fzf 
 alias fpdf='filepath=$(fzf); lesspipe.sh $filepath | cat'
 alias fpath="fzf --bind 'ctrl-y:execute-silent(pbcopy <<< {})+abort'"
-alias f="zsh ~/GitFiles/mac_dotfiles/fzfvim.sh"
+alias ff="zsh ~/GitFiles/mac_dotfiles/fzfvim.sh"
+alias ft="zsh ~/GitFiles/mac_dotfiles/rg_bat_fzf.sh"
 #white space killer 
 alias wsk="zsh ~/GitFiles/mac_dotfiles/wsk.sh"
 ## Grep
