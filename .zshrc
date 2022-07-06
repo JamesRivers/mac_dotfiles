@@ -44,7 +44,7 @@ alias ll='exa -al'
 alias tree='exa -T'
 alias tree-R='exa -TR'
 #fzf 
-alias fview='filepath=$(fzf); cat $filepath'
+alias fview="fzf --preview='bat --color=always {} --style=plain'"
 alias fpdf='filepath=$(fzf); lesspipe.sh $filepath | cat'
 alias fedit='filepath=$(fzf); vim $filepath'
 alias fpath="fzf --bind 'ctrl-y:execute-silent(pbcopy <<< {})+abort'"
