@@ -1,11 +1,13 @@
 #!/bin/zsh
-PG_PREFIX="pdfgrep -iHnr"
-INITIAL_QUERY=""
-FZF_DEFAULT_COMMAND="$PG_PREFIX '$INITIAL_QUERY'" 
-  CHOICE=$(fzf --bind "change:reload:$PG_PREFIX {q} || true" \
-      --sort \
-      --multi \
-      --preview '[[ ! -z {} ]] && rg --pretty --context 5 {q} {}' \
-      --ansi --phony --query "$INITIAL_QUERY") 
-
-[ -n "$CHOICE" ] && vim "$CHOICE"
+#
+RG_PREFIX="rga -is --files-with-matches"
+local file
+file="$(
+       FZF_DEFAULT_COMMAND="$RG_PREFIX '$1'" \
+       fzf --sort --preview="[[ ! -z {} ]] && rga --pretty --context 5 {q} {}" \
+       --phony -q "$1" \
+       --bind "change:reload:$RG_PREFIX {q}" \
+       --preview-window="70%:wrap"
+       )" &&
+      echo "opening $file" &&
+      vim "$file"
