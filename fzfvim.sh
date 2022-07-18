@@ -1,3 +1,3 @@
 #!/bin/zsh
 
-vim $(fzf --preview='bat --color=always --style=plain {}')
+vim $(fzf -i --preview='bat --color=always --style=plain {}')
